@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MNIST Handwritten Digit Classification | Najeeb Shirzad</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <section class="project-detail">
+
+      <h1>Handwritten Digit Classification Using ML Models</h1>
+      <p class="topic">
+        Machine Learning | Deep Learning | Computer Vision
+      </p>
+
+      <!-- OVERVIEW -->
+      <h2>Project Overview</h2>
+      <p>
+        This project focuses on building and evaluating multiple machine learning and deep learning
+        models to classify handwritten digits from the MNIST dataset. The dataset contains 70,000
+        grayscale images (28×28 pixels) representing digits from 0 to 9.
+        The goal was to compare traditional ML models with neural network–based approaches
+        and identify the most effective method for image classification.
+      </p>
+
+      <!-- HERO IMAGE -->
+      <div class="project-detail-img-container">
+        <img src="../images/mnist.png"
+             alt="MNIST handwritten digit samples"
+             class="project-detail-img">
+      </div>
+
+      <!-- MODELS -->
+      <h3>Models Implemented</h3>
+      <ul>
+        <li>Support Vector Machine (SVM)</li>
+        <li>Random Forest Classifier</li>
+        <li>k-Nearest Neighbors (k-NN)</li>
+        <li>Deep Neural Network (DNN)</li>
+        <li>Convolutional Neural Network (CNN)</li>
+      </ul>
+
+      <!-- CONTRIBUTIONS -->
+      <h3>Key Contributions</h3>
+      <ul>
+        <li>Loaded and explored the MNIST dataset using Scikit-learn and Keras.</li>
+        <li>Normalized pixel values and reshaped input data for model compatibility.</li>
+        <li>Trained classical ML models with and without hyperparameter tuning using GridSearchCV.</li>
+        <li>Designed and trained DNN and CNN models using TensorFlow/Keras.</li>
+        <li>Evaluated models using accuracy, precision, recall, F1-score, and confusion matrices.</li>
+      </ul>
+
+      <!-- RESULTS SUMMARY -->
+      <h3>Results Summary</h3>
+      <ul>
+        <li><strong>SVM:</strong> 96.30% test accuracy — best-performing traditional ML model.</li>
+        <li><strong>DNN:</strong> 95.08% validation accuracy after 20 epochs.</li>
+        <li><strong>CNN:</strong> 99.10% test accuracy — highest overall performance.</li>
+      </ul>
+
+      <!-- CHARTS SECTION -->
+      <h3>Model Performance Visualizations</h3>
+
+      <div class="project-charts">
+        <div class="chart-grid">
+
+          <div class="chart-card">
+            <img src="../images/mnist_cnn_lost.png"
+                 alt="CNN training and validation loss">
+            <p>
+              CNN training and validation loss over 5 epochs, demonstrating fast convergence
+              and strong generalization.
+            </p>
+          </div>
+
+          <div class="chart-card">
+            <img src="../images/mnist_confusion_matrix_cnn.png"
+                 alt="CNN confusion matrix">
+            <p>
+              Confusion matrix of the CNN model, achieving 99.10% accuracy on the test set.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- GITHUB LINK -->
+      <a href="https://github.com"
+         target="_blank"
+         rel="noopener"
+         class="btn">
+        View Project on GitHub
+      </a>
+
+      <br><br>
+
+      <a href="../projects.html" class="btn">
+        Back to Projects
+      </a>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Najeeb Shirzad. All rights reserved.</p>
+    <div class="social">
+      <a href="https://github.com/NajeebullahShirzad/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/najeeb-shirzad-b3a713172/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
